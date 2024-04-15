@@ -206,10 +206,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1438170787}
+      - m_Target: {fileID: 940933630}
         m_TargetAssemblyTypeName: Switch, Assembly-CSharp
-        m_MethodName: sceneLoad
-        m_Mode: 3
+        m_MethodName: PlayGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -460,6 +460,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841818937}
   m_CullTransparentMesh: 1
+--- !u!1 &940933629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 940933631}
+  - component: {fileID: 940933630}
+  m_Layer: 0
+  m_Name: SceneManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &940933630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940933629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37308a68beff99842afdcf2b0a201814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &940933631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940933629}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.374279, y: 3.3239992, z: -0.899999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438170783
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,7 +515,6 @@ GameObject:
   - component: {fileID: 1438170786}
   - component: {fileID: 1438170785}
   - component: {fileID: 1438170784}
-  - component: {fileID: 1438170787}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -553,18 +596,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1438170787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438170783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37308a68beff99842afdcf2b0a201814, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1873179686
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,8 +739,8 @@ Canvas:
   m_GameObject: {fileID: 2118163678}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1438170785}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -750,3 +781,4 @@ SceneRoots:
   - {fileID: 1438170786}
   - {fileID: 2118163682}
   - {fileID: 752260639}
+  - {fileID: 940933631}

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Switch : MonoBehaviour
 {
-    public void sceneLoad(int numbScen)
+    public void PlayGame( )
     {
-        SceneManager.LoadScene(numbScen);
+        SceneManager.LoadScene("Platformer1");
     }
 }
