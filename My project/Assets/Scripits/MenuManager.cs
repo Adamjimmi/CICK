@@ -9,4 +9,9 @@ public class Switch : MonoBehaviour
     {
         SceneManager.LoadScene("Platformer1");
     }
+
+    public void Scene2()
+    {
+        SceneManager.LoadScene("menu");
+    }
 }

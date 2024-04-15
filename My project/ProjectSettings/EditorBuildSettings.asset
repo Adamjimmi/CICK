@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Platformer1.unity
     guid: bfc2ebe69ab57a64fb2fb6af9fb7ce73
+  - enabled: 1
+    path: Assets/Scene/Cast_scene.unity
+    guid: 46bcf40a5aee6b3468eaec6fde946809
   m_configObjects: {}
